@@ -22,7 +22,7 @@ namespace BibliotecaAsp.Controllers
         // GET: Authors
         public async Task<IActionResult> Index(string sortOrder)
         {
-            // 1. Guardamos en ViewData los parámetros de orden para cada columna
+            // Parametros de orden x cada columna
             ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) || sortOrder == "name_asc"
                 ? "name_desc" : "name_asc";
             ViewData["SurnameSortParm"] = sortOrder == "surname_asc"
