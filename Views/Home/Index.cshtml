@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<section class="hero py-5 text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Bienvenido a BibliotecaASP</h1>
+        <p class="lead text-secondary">
+            Gestiona tus Autores y Libros de forma sencilla.
+        </p>
+        <img src="~/images/librerias.jpg" alt="Biblioteca" class="img-fluid my-4" style="max-height:300px; object-fit:cover;">
+        <div>
+            <a asp-controller="Authors" asp-action="Index" class="btn btn-primary btn-lg me-2">Ir a Autores</a>
+            <a asp-controller="Books" asp-action="Index" class="btn btn-success btn-lg">Ir a Libros</a>
+        </div>
+    </div>
+</section>
+
+<div class="container py-5">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card card-custom h-100" p-3>
+                <div class="card-body">
+                    <h5 class="card-title">Autores</h5>
+                    <p class="card-text">Crea, edita y elimina autores con nombre, apellido y fecha de nacimiento.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-custom h-100" p-3>
+                <div class="card-body">
+                    <h5 class="card-title">Libros</h5>
+                    <p class="card-text">Crea, edita y elimina libros, asignándolos a sus autores.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-custom h-100" p-3>
+                <div class="card-body">
+                    <h5 class="card-title">Detalles</h5>
+                    <p class="card-text">Visualiza en detalle cada autor y sus libros asociados.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
